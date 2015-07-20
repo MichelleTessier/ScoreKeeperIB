@@ -10,14 +10,19 @@
 		2C4AF7A01B56F69200311D9C /* PlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF79F1B56F69200311D9C /* PlayerTableViewCell.m */; };
 		2C4AF7A91B57F9F900311D9C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF7A81B57F9F900311D9C /* Player.m */; };
 		2C4AF7AC1B57FA1700311D9C /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF7AB1B57FA1700311D9C /* PlayerController.m */; };
+		2CCAC62C1B5856B90052D31E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC62B1B5856B90052D31E /* ListViewController.m */; };
+		2CCAC6321B5859FB0052D31E /* ListViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6311B5859FB0052D31E /* ListViewDataSource.m */; };
+		2CCAC6351B585EEE0052D31E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6341B585EEE0052D31E /* Game.m */; };
+		2CCAC6381B585F190052D31E /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6371B585F190052D31E /* GameController.m */; };
+		2CCAC63E1B595B690052D31E /* GameEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC63D1B595B690052D31E /* GameEntryViewController.m */; };
 		2CCFB61A1B55C1E200BEC153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCFB6191B55C1E200BEC153 /* main.m */; };
 		2CCFB61D1B55C1E200BEC153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCFB61C1B55C1E200BEC153 /* AppDelegate.m */; };
-		2CCFB6201B55C1E200BEC153 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCFB61F1B55C1E200BEC153 /* ListViewController.m */; };
+		2CCFB6201B55C1E200BEC153 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCFB61F1B55C1E200BEC153 /* DetailViewController.m */; };
 		2CCFB6231B55C1E200BEC153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCFB6211B55C1E200BEC153 /* Main.storyboard */; };
 		2CCFB6251B55C1E200BEC153 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCFB6241B55C1E200BEC153 /* Images.xcassets */; };
 		2CCFB6281B55C1E200BEC153 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCFB6261B55C1E200BEC153 /* LaunchScreen.xib */; };
 		2CCFB6341B55C1E200BEC153 /* ScoreKeeperIBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCFB6331B55C1E200BEC153 /* ScoreKeeperIBTests.m */; };
-		2CCFB63F1B55C34D00BEC153 /* ListViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCFB63E1B55C34D00BEC153 /* ListViewDataSource.m */; };
+		2CCFB63F1B55C34D00BEC153 /* DetailViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCFB63E1B55C34D00BEC153 /* DetailViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +42,31 @@
 		2C4AF7A81B57F9F900311D9C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		2C4AF7AA1B57FA1700311D9C /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
 		2C4AF7AB1B57FA1700311D9C /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
+		2CCAC62A1B5856B90052D31E /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		2CCAC62B1B5856B90052D31E /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		2CCAC6301B5859FB0052D31E /* ListViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewDataSource.h; sourceTree = "<group>"; };
+		2CCAC6311B5859FB0052D31E /* ListViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewDataSource.m; sourceTree = "<group>"; };
+		2CCAC6331B585EEE0052D31E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		2CCAC6341B585EEE0052D31E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		2CCAC6361B585F190052D31E /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		2CCAC6371B585F190052D31E /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		2CCAC63C1B595B690052D31E /* GameEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameEntryViewController.h; path = ../GameEntryViewController.h; sourceTree = "<group>"; };
+		2CCAC63D1B595B690052D31E /* GameEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameEntryViewController.m; path = ../GameEntryViewController.m; sourceTree = "<group>"; };
 		2CCFB6141B55C1E200BEC153 /* ScoreKeeperIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreKeeperIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCFB6181B55C1E200BEC153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CCFB6191B55C1E200BEC153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CCFB61B1B55C1E200BEC153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CCFB61C1B55C1E200BEC153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CCFB61E1B55C1E200BEC153 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		2CCFB61F1B55C1E200BEC153 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		2CCFB61E1B55C1E200BEC153 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2CCFB61F1B55C1E200BEC153 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2CCFB6221B55C1E200BEC153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CCFB6241B55C1E200BEC153 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2CCFB6271B55C1E200BEC153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2CCFB62D1B55C1E200BEC153 /* ScoreKeeperIBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreKeeperIBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCFB6321B55C1E200BEC153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CCFB6331B55C1E200BEC153 /* ScoreKeeperIBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeperIBTests.m; sourceTree = "<group>"; };
-		2CCFB63D1B55C34D00BEC153 /* ListViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewDataSource.h; sourceTree = "<group>"; };
-		2CCFB63E1B55C34D00BEC153 /* ListViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewDataSource.m; sourceTree = "<group>"; };
+		2CCFB63D1B55C34D00BEC153 /* DetailViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewDataSource.h; sourceTree = "<group>"; };
+		2CCFB63E1B55C34D00BEC153 /* DetailViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +110,20 @@
 			children = (
 				2CCFB61B1B55C1E200BEC153 /* AppDelegate.h */,
 				2CCFB61C1B55C1E200BEC153 /* AppDelegate.m */,
-				2CCFB61E1B55C1E200BEC153 /* ListViewController.h */,
-				2CCFB61F1B55C1E200BEC153 /* ListViewController.m */,
-				2CCFB63D1B55C34D00BEC153 /* ListViewDataSource.h */,
-				2CCFB63E1B55C34D00BEC153 /* ListViewDataSource.m */,
+				2CCAC62A1B5856B90052D31E /* ListViewController.h */,
+				2CCAC62B1B5856B90052D31E /* ListViewController.m */,
+				2CCAC6301B5859FB0052D31E /* ListViewDataSource.h */,
+				2CCAC6311B5859FB0052D31E /* ListViewDataSource.m */,
+				2CCFB61E1B55C1E200BEC153 /* DetailViewController.h */,
+				2CCFB61F1B55C1E200BEC153 /* DetailViewController.m */,
+				2CCFB63D1B55C34D00BEC153 /* DetailViewDataSource.h */,
+				2CCFB63E1B55C34D00BEC153 /* DetailViewDataSource.m */,
+				2CCAC6331B585EEE0052D31E /* Game.h */,
+				2CCAC6341B585EEE0052D31E /* Game.m */,
+				2CCAC6361B585F190052D31E /* GameController.h */,
+				2CCAC6371B585F190052D31E /* GameController.m */,
+				2CCAC63C1B595B690052D31E /* GameEntryViewController.h */,
+				2CCAC63D1B595B690052D31E /* GameEntryViewController.m */,
 				2C4AF79E1B56F69200311D9C /* PlayerTableViewCell.h */,
 				2C4AF79F1B56F69200311D9C /* PlayerTableViewCell.m */,
 				2C4AF7A71B57F9F900311D9C /* Player.h */,
@@ -239,13 +264,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CCFB6201B55C1E200BEC153 /* ListViewController.m in Sources */,
-				2CCFB63F1B55C34D00BEC153 /* ListViewDataSource.m in Sources */,
+				2CCFB6201B55C1E200BEC153 /* DetailViewController.m in Sources */,
+				2CCFB63F1B55C34D00BEC153 /* DetailViewDataSource.m in Sources */,
+				2CCAC62C1B5856B90052D31E /* ListViewController.m in Sources */,
 				2CCFB61D1B55C1E200BEC153 /* AppDelegate.m in Sources */,
+				2CCAC6381B585F190052D31E /* GameController.m in Sources */,
 				2CCFB61A1B55C1E200BEC153 /* main.m in Sources */,
+				2CCAC6351B585EEE0052D31E /* Game.m in Sources */,
 				2C4AF7AC1B57FA1700311D9C /* PlayerController.m in Sources */,
 				2C4AF7A91B57F9F900311D9C /* Player.m in Sources */,
+				2CCAC6321B5859FB0052D31E /* ListViewDataSource.m in Sources */,
 				2C4AF7A01B56F69200311D9C /* PlayerTableViewCell.m in Sources */,
+				2CCAC63E1B595B690052D31E /* GameEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "Player.h"
+#import "GameController.h"
 
 @interface PlayerController : NSObject
 
 @property (nonatomic, strong ,readonly) NSArray *players;
 
 + (PlayerController *) sharedInstance;
--(void)addPlayer:(Player *)player;
--(void)removeLastPlayer;
+- (void)addPlayer:(Player *)player forGame:(Game *)game toArray: (NSArray *)players;
+- (void)removePlayer:(Player *)player forGame:(Game *)game fromArray:(NSArray *)players;
 
 
 @end
