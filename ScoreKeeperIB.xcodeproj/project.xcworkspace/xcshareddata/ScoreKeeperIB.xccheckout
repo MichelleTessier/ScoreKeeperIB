@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5C8EB363-9E89-417D-AA1C-66CA44BBB725</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C2B0529E3969FF144868F4D4FFA0A73AAEB79E0B</key>
+		<string>https://github.com/MichelleTessier/ScoreKeeperIB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScoreKeeperIB.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2B0529E3969FF144868F4D4FFA0A73AAEB79E0B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MichelleTessier/ScoreKeeperIB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C2B0529E3969FF144868F4D4FFA0A73AAEB79E0B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2B0529E3969FF144868F4D4FFA0A73AAEB79E0B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScoreKeeperIB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
