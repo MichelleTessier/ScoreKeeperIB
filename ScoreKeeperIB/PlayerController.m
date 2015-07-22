@@ -30,13 +30,13 @@
     return sharedInstance;
 }
 
-- (void)addPlayer:(Player *)player forGame:(Game *)game toArray: (NSArray *)players{
+- (void)addPlayer:(Round *)player forGame:(Game *)game toArray: (NSArray *)players{
     NSMutableArray *mutablePlayers = [players mutableCopy];
     [mutablePlayers addObject:player];
     game.players = mutablePlayers;
 }
 
-- (void)removePlayer:(Player *)player forGame:(Game *)game fromArray:(NSArray *)players{
+- (void)removePlayer:(Round *)player forGame:(Game *)game fromArray:(NSArray *)players{
     NSMutableArray *mutablePlayers = [players mutableCopy];
     [mutablePlayers removeObject:player];
     game.players = mutablePlayers;

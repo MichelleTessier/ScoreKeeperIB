@@ -7,16 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Player.h"
+#import "Round.h"
 #import "GameController.h"
 
 @interface PlayerController : NSObject
 
+#warning should be roundController
+
 @property (nonatomic, strong ,readonly) NSArray *players;
 
 + (PlayerController *) sharedInstance;
-- (void)addPlayer:(Player *)player forGame:(Game *)game toArray: (NSArray *)players;
-- (void)removePlayer:(Player *)player forGame:(Game *)game fromArray:(NSArray *)players;
+- (void)addPlayer:(Round *)player forGame:(Game *)game toArray: (NSArray *)players;
+- (void)removePlayer:(Round *)player forGame:(Game *)game fromArray:(NSArray *)players;
 
 
 @end

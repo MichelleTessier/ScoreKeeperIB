@@ -6,18 +6,18 @@
 //  Copyright (c) 2015 MichelleTessier. All rights reserved.
 //
 
-#import "ListViewController.h"
+#import "GameViewController.h"
 #import "DetailViewController.h"
 #import "GameController.h"
 #import "GameEntryViewController.h"
 #import "DetailViewDataSource.h"
 
-@interface ListViewController () <SaveButtonDelegate>
+@interface GameViewController () <SaveButtonDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *gameTableView;
 
 @end
 
-@implementation ListViewController
+@implementation GameViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

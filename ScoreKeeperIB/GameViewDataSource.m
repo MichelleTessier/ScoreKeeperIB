@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 MichelleTessier. All rights reserved.
 //
 
-#import "ListViewDataSource.h"
+#import "GameViewDataSource.h"
 
-@implementation ListViewDataSource
+@implementation GameViewDataSource
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [GameController sharedInstance].games.count;

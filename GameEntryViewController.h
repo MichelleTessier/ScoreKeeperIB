@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GameController.h"
-#import "ListViewController.h"
+#import "GameViewController.h"
 
 @protocol SaveButtonDelegate;
 
@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *gameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *numberOfPlayersTextField;
 
-@property (strong, nonatomic) ListViewController *presentingListViewController;
+@property (strong, nonatomic) GameViewController *presentingListViewController;
 @property (weak, nonatomic) id <SaveButtonDelegate> delegate;
 
 @property (nonatomic, strong) Game *game;

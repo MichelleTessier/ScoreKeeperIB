@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="9G6-OI-9WS">
             <objects>
-                <viewController id="yxr-j6-fGa" customClass="ListViewController" sceneMemberID="viewController">
+                <viewController id="yxr-j6-fGa" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EHh-4u-fgh"/>
                         <viewControllerLayoutGuide type="bottom" id="w1S-PQ-5ME"/>
@@ -58,7 +58,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bR2-eO-xqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="86b-cb-vf7" customClass="ListViewDataSource"/>
+                <customObject id="86b-cb-vf7" customClass="GameViewDataSource"/>
             </objects>
             <point key="canvasLocation" x="447" y="444"/>
         </scene>
@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="playerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" id="raB-Ja-jLq" customClass="PlayerTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="playerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" id="raB-Ja-jLq" customClass="RoundTableViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="raB-Ja-jLq" id="bJJ-jC-OU8">
@@ -228,7 +228,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="vZv-qY-48f">
-                        <barButtonItem key="rightBarButtonItem" title="Add Player" id="XfU-5M-Rry">
+                        <barButtonItem key="rightBarButtonItem" title="Add Round" id="XfU-5M-Rry">
                             <connections>
                                 <action selector="addButtonTapped:" destination="vXZ-lx-hvc" id="7rc-Rl-Cjn"/>
                             </connections>

@@ -40,7 +40,7 @@ static NSString *playerCell = @"playerCell";
 
 
 - (IBAction)addButtonTapped:(id)sender {
-    Player *player = [Player new];
+    Round *player = [Round new];
     PlayerController *playerController = [PlayerController sharedInstance];
     [playerController addPlayer:player forGame:self.game toArray:self.game.players];
     [self.tableView reloadData];
@@ -51,7 +51,7 @@ static NSString *playerCell = @"playerCell";
     PlayerController *playerController = [PlayerController sharedInstance];
     game.players = [NSArray new];
     for (int i = 0; i < self.game.numberOfPlayers; i++){
-        Player *player = [Player new];
+        Round *player = [Round new];
         [playerController addPlayer:player forGame:self.game toArray:game.players];
     }
 }
@@ -72,7 +72,7 @@ static NSString *playerCell = @"playerCell";
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if (editingStyle == UITableViewCellEditingStyleDelete){
         PlayerController *playerController = [PlayerController sharedInstance];
-        Player *player = self.game.players[indexPath.row];
+        Round *player = self.game.players[indexPath.row];
         [playerController removePlayer:player forGame:self.game fromArray:self.game.players];
         
 #warning dont forget to add save here when you add methods to save players and games to whatever that thing we learned today was
