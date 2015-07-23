@@ -8,10 +8,11 @@
 
 #import "DetailViewController.h"
 #import "DetailViewDataSource.h"
-#import "PlayerController.h"
+#import "RoundController.h"
 #import "GameController.h"
+#import "RoundDetailViewController.h"
 
-static NSString *playerCell = @"playerCell";
+static NSString *roundCell = @"playerCell";
 
 @interface DetailViewController () <UITextFieldDelegate>
 
@@ -40,40 +41,40 @@ static NSString *playerCell = @"playerCell";
 
 
 - (IBAction)addButtonTapped:(id)sender {
-    Round *player = [Round new];
-    PlayerController *playerController = [PlayerController sharedInstance];
-    [playerController addPlayer:player forGame:self.game toArray:self.game.players];
+    Round *round = [Round new];
+    RoundController *roundController = [RoundController sharedInstance];
+    [roundController addRound:round forGame:self.game toArray:self.game.rounds];
     [self.tableView reloadData];
 }
 
 - (void)updateDetailViewForNewGame:(Game *)game{
     self.game = game;
-    PlayerController *playerController = [PlayerController sharedInstance];
-    game.players = [NSArray new];
-    for (int i = 0; i < self.game.numberOfPlayers; i++){
-        Round *player = [Round new];
-        [playerController addPlayer:player forGame:self.game toArray:game.players];
+    RoundController *roundController = [RoundController sharedInstance];
+    game.rounds = [NSArray new];
+    for (int i = 0; i < self.game.numberOfRounds; i++){
+        Round *round = [Round new];
+        [roundController addRound:round forGame:self.game toArray:game.rounds];
     }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"playerCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roundCell"];
     
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return self.game.players.count;
+    return self.game.rounds.count;
     
 }
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if (editingStyle == UITableViewCellEditingStyleDelete){
-        PlayerController *playerController = [PlayerController sharedInstance];
-        Round *player = self.game.players[indexPath.row];
-        [playerController removePlayer:player forGame:self.game fromArray:self.game.players];
+        RoundController *roundController = [RoundController sharedInstance];
+        Round *round = self.game.rounds[indexPath.row];
+        [roundController removeRound:round forGame:self.game fromArray:self.game.rounds];
         
 #warning dont forget to add save here when you add methods to save players and games to whatever that thing we learned today was
         
@@ -81,6 +82,16 @@ static NSString *playerCell = @"playerCell";
     }
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqual:@"scoreTapperSegue"]){
+        RoundDetailViewController *roundDetailVC = segue.destinationViewController;
+        UITableViewCell *tappedCell = sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
+        
+        
+        
+    }
+}
 
 
 

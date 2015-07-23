@@ -11,7 +11,7 @@
 @interface Game : NSObject
 
 @property (nonatomic, strong) NSString *gameTitle;
-@property (nonatomic, assign) NSInteger numberOfPlayers;
-@property (nonatomic, strong) NSArray *players;
+@property (nonatomic, assign) NSInteger numberOfRounds;
+@property (nonatomic, strong) NSArray *rounds;
 
 @end

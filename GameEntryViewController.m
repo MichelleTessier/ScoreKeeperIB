@@ -39,7 +39,7 @@
         
         game.gameTitle = self.gameTextField.text;
         NSString *string = self.numberOfPlayersTextField.text;
-        game.numberOfPlayers = [string integerValue];
+        game.numberOfRounds = [string integerValue];
         
         GameController *gameController = [GameController sharedInstance];
         [gameController addGame:game];

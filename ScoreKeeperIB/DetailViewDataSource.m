@@ -7,13 +7,13 @@
 //
 
 #import "DetailViewDataSource.h"
-#import "PlayerController.h"
+#import "RoundController.h"
 #import "GameController.h"
 #import "DetailViewController.h"
 
-static NSString *playerCell = @"playerCell";
+static NSString *roundCell = @"roundCell";
 
-@implementation DetailViewDataSource
+@implementation DetailViewDataSource 
 
 //-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    
