@@ -10,7 +10,8 @@
 #import "GameController.h"
 #import "DetailViewDataSource.h"
 
-@interface DetailViewController : UIViewController <UITableViewDataSource>
+//@interface DetailViewController : UIViewController <UITableViewDataSource>
+@interface DetailViewController : UIViewController
 
 @property (nonatomic, strong) Game *game;
 @property (strong, nonatomic) DetailViewDataSource *dataSource;

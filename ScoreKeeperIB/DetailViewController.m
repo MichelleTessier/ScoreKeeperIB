@@ -11,8 +11,9 @@
 #import "RoundController.h"
 #import "GameController.h"
 #import "RoundDetailViewController.h"
+#import "DetailViewDataSource.h"
 
-static NSString *roundCell = @"playerCell";
+static NSString *roundCell = @"roundCell";
 
 @interface DetailViewController () <UITextFieldDelegate>
 
@@ -27,6 +28,9 @@ static NSString *roundCell = @"playerCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    ((DetailViewDataSource *)self.tableView.dataSource).game = self.game;
+ 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,30 +61,31 @@ static NSString *roundCell = @"playerCell";
     }
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roundCell"];
-    
-    return cell;
-}
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return self.game.rounds.count;
-    
-}
+//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"roundCell"];
+//    
+//    return cell;
+//}
+//
+//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+//    
+//    return self.game.rounds.count;
+//    
+//}
 
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (editingStyle == UITableViewCellEditingStyleDelete){
-        RoundController *roundController = [RoundController sharedInstance];
-        Round *round = self.game.rounds[indexPath.row];
-        [roundController removeRound:round forGame:self.game fromArray:self.game.rounds];
-        
-#warning dont forget to add save here when you add methods to save players and games to whatever that thing we learned today was
-        
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    }
-}
+//-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+//    if (editingStyle == UITableViewCellEditingStyleDelete){
+//        RoundController *roundController = [RoundController sharedInstance];
+//        Round *round = self.game.rounds[indexPath.row];
+//        [roundController removeRound:round forGame:self.game fromArray:self.game.rounds];
+//        
+//#warning dont forget to add save here when you add methods to save players and games to whatever that thing we learned today was
+//        
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//    }
+//}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqual:@"scoreTapperSegue"]){

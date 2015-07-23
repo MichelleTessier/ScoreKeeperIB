@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="playerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="roundCell" id="raB-Ja-jLq" customClass="RoundTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="roundCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="roundCell" id="raB-Ja-jLq" customClass="RoundTableViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="raB-Ja-jLq" id="bJJ-jC-OU8">
@@ -195,7 +195,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="Aan-Mb-oyV"/>
+                            <outlet property="dataSource" destination="DPZ-RL-4yr" id="xeo-Ok-xOi"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="vZv-qY-48f">
