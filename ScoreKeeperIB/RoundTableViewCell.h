@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlayerTableViewCell : UITableViewCell
+@interface RoundTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIStepper *scoreStepper;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;

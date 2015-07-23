@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Player : NSObject
+@interface Round : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) NSInteger score;

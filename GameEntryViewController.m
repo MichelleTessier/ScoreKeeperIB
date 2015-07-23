@@ -7,7 +7,7 @@
 //
 
 #import "GameEntryViewController.h"
-#import "ListViewController.h"
+#import "GameViewController.h"
 
 @interface GameEntryViewController ()
 
@@ -19,8 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.gameTextField.placeholder = @"Name of Game";
-    self.numberOfPlayersTextField.placeholder = @"Number of Players";
+    self.gameTextField.placeholder = @"Course";
+    self.numberOfPlayersTextField.placeholder = @"Number of Rounds";
+    
+    //maybe add a date stamp here?
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +39,7 @@
         
         game.gameTitle = self.gameTextField.text;
         NSString *string = self.numberOfPlayersTextField.text;
-        game.numberOfPlayers = [string integerValue];
+        game.numberOfRounds = [string integerValue];
         
         GameController *gameController = [GameController sharedInstance];
         [gameController addGame:game];

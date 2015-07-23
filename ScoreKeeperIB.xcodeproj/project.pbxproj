@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C4AF7A01B56F69200311D9C /* PlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF79F1B56F69200311D9C /* PlayerTableViewCell.m */; };
-		2C4AF7A91B57F9F900311D9C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF7A81B57F9F900311D9C /* Player.m */; };
-		2C4AF7AC1B57FA1700311D9C /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF7AB1B57FA1700311D9C /* PlayerController.m */; };
-		2CCAC62C1B5856B90052D31E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC62B1B5856B90052D31E /* ListViewController.m */; };
-		2CCAC6321B5859FB0052D31E /* ListViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6311B5859FB0052D31E /* ListViewDataSource.m */; };
+		2C4AF7A01B56F69200311D9C /* RoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF79F1B56F69200311D9C /* RoundTableViewCell.m */; };
+		2C4AF7A91B57F9F900311D9C /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF7A81B57F9F900311D9C /* Round.m */; };
+		2C4AF7AC1B57FA1700311D9C /* RoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AF7AB1B57FA1700311D9C /* RoundController.m */; };
+		2C852C781B60691000F73A49 /* RoundDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C852C771B60691000F73A49 /* RoundDetailViewController.m */; };
+		2CCAC62C1B5856B90052D31E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC62B1B5856B90052D31E /* GameViewController.m */; };
+		2CCAC6321B5859FB0052D31E /* GameViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6311B5859FB0052D31E /* GameViewDataSource.m */; };
 		2CCAC6351B585EEE0052D31E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6341B585EEE0052D31E /* Game.m */; };
 		2CCAC6381B585F190052D31E /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC6371B585F190052D31E /* GameController.m */; };
 		2CCAC63E1B595B690052D31E /* GameEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAC63D1B595B690052D31E /* GameEntryViewController.m */; };
@@ -36,16 +37,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C4AF79E1B56F69200311D9C /* PlayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerTableViewCell.h; sourceTree = "<group>"; };
-		2C4AF79F1B56F69200311D9C /* PlayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTableViewCell.m; sourceTree = "<group>"; };
-		2C4AF7A71B57F9F900311D9C /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		2C4AF7A81B57F9F900311D9C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		2C4AF7AA1B57FA1700311D9C /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
-		2C4AF7AB1B57FA1700311D9C /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
-		2CCAC62A1B5856B90052D31E /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		2CCAC62B1B5856B90052D31E /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		2CCAC6301B5859FB0052D31E /* ListViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewDataSource.h; sourceTree = "<group>"; };
-		2CCAC6311B5859FB0052D31E /* ListViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewDataSource.m; sourceTree = "<group>"; };
+		2C4AF79E1B56F69200311D9C /* RoundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundTableViewCell.h; sourceTree = "<group>"; };
+		2C4AF79F1B56F69200311D9C /* RoundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundTableViewCell.m; sourceTree = "<group>"; };
+		2C4AF7A71B57F9F900311D9C /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Round.h; sourceTree = "<group>"; };
+		2C4AF7A81B57F9F900311D9C /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
+		2C4AF7AA1B57FA1700311D9C /* RoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundController.h; sourceTree = "<group>"; };
+		2C4AF7AB1B57FA1700311D9C /* RoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundController.m; sourceTree = "<group>"; };
+		2C852C761B60691000F73A49 /* RoundDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundDetailViewController.h; sourceTree = "<group>"; };
+		2C852C771B60691000F73A49 /* RoundDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundDetailViewController.m; sourceTree = "<group>"; };
+		2CCAC62A1B5856B90052D31E /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		2CCAC62B1B5856B90052D31E /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		2CCAC6301B5859FB0052D31E /* GameViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewDataSource.h; sourceTree = "<group>"; };
+		2CCAC6311B5859FB0052D31E /* GameViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewDataSource.m; sourceTree = "<group>"; };
 		2CCAC6331B585EEE0052D31E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		2CCAC6341B585EEE0052D31E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		2CCAC6361B585F190052D31E /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
@@ -110,10 +113,10 @@
 			children = (
 				2CCFB61B1B55C1E200BEC153 /* AppDelegate.h */,
 				2CCFB61C1B55C1E200BEC153 /* AppDelegate.m */,
-				2CCAC62A1B5856B90052D31E /* ListViewController.h */,
-				2CCAC62B1B5856B90052D31E /* ListViewController.m */,
-				2CCAC6301B5859FB0052D31E /* ListViewDataSource.h */,
-				2CCAC6311B5859FB0052D31E /* ListViewDataSource.m */,
+				2CCAC62A1B5856B90052D31E /* GameViewController.h */,
+				2CCAC62B1B5856B90052D31E /* GameViewController.m */,
+				2CCAC6301B5859FB0052D31E /* GameViewDataSource.h */,
+				2CCAC6311B5859FB0052D31E /* GameViewDataSource.m */,
 				2CCFB61E1B55C1E200BEC153 /* DetailViewController.h */,
 				2CCFB61F1B55C1E200BEC153 /* DetailViewController.m */,
 				2CCFB63D1B55C34D00BEC153 /* DetailViewDataSource.h */,
@@ -124,12 +127,14 @@
 				2CCAC6371B585F190052D31E /* GameController.m */,
 				2CCAC63C1B595B690052D31E /* GameEntryViewController.h */,
 				2CCAC63D1B595B690052D31E /* GameEntryViewController.m */,
-				2C4AF79E1B56F69200311D9C /* PlayerTableViewCell.h */,
-				2C4AF79F1B56F69200311D9C /* PlayerTableViewCell.m */,
-				2C4AF7A71B57F9F900311D9C /* Player.h */,
-				2C4AF7A81B57F9F900311D9C /* Player.m */,
-				2C4AF7AA1B57FA1700311D9C /* PlayerController.h */,
-				2C4AF7AB1B57FA1700311D9C /* PlayerController.m */,
+				2C4AF79E1B56F69200311D9C /* RoundTableViewCell.h */,
+				2C4AF79F1B56F69200311D9C /* RoundTableViewCell.m */,
+				2C4AF7A71B57F9F900311D9C /* Round.h */,
+				2C4AF7A81B57F9F900311D9C /* Round.m */,
+				2C4AF7AA1B57FA1700311D9C /* RoundController.h */,
+				2C4AF7AB1B57FA1700311D9C /* RoundController.m */,
+				2C852C761B60691000F73A49 /* RoundDetailViewController.h */,
+				2C852C771B60691000F73A49 /* RoundDetailViewController.m */,
 				2CCFB6211B55C1E200BEC153 /* Main.storyboard */,
 				2CCFB6241B55C1E200BEC153 /* Images.xcassets */,
 				2CCFB6261B55C1E200BEC153 /* LaunchScreen.xib */,
@@ -266,15 +271,16 @@
 			files = (
 				2CCFB6201B55C1E200BEC153 /* DetailViewController.m in Sources */,
 				2CCFB63F1B55C34D00BEC153 /* DetailViewDataSource.m in Sources */,
-				2CCAC62C1B5856B90052D31E /* ListViewController.m in Sources */,
+				2CCAC62C1B5856B90052D31E /* GameViewController.m in Sources */,
 				2CCFB61D1B55C1E200BEC153 /* AppDelegate.m in Sources */,
 				2CCAC6381B585F190052D31E /* GameController.m in Sources */,
 				2CCFB61A1B55C1E200BEC153 /* main.m in Sources */,
 				2CCAC6351B585EEE0052D31E /* Game.m in Sources */,
-				2C4AF7AC1B57FA1700311D9C /* PlayerController.m in Sources */,
-				2C4AF7A91B57F9F900311D9C /* Player.m in Sources */,
-				2CCAC6321B5859FB0052D31E /* ListViewDataSource.m in Sources */,
-				2C4AF7A01B56F69200311D9C /* PlayerTableViewCell.m in Sources */,
+				2C4AF7AC1B57FA1700311D9C /* RoundController.m in Sources */,
+				2C4AF7A91B57F9F900311D9C /* Round.m in Sources */,
+				2CCAC6321B5859FB0052D31E /* GameViewDataSource.m in Sources */,
+				2C852C781B60691000F73A49 /* RoundDetailViewController.m in Sources */,
+				2C4AF7A01B56F69200311D9C /* RoundTableViewCell.m in Sources */,
 				2CCAC63E1B595B690052D31E /* GameEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

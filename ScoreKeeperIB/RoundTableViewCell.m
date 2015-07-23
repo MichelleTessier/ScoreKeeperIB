@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 MichelleTessier. All rights reserved.
 //
 
-#import "PlayerTableViewCell.h"
+#import "RoundTableViewCell.h"
 
-@interface PlayerTableViewCell ()  
+@interface RoundTableViewCell ()  
 
 @end
 
-@implementation PlayerTableViewCell
+@implementation RoundTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

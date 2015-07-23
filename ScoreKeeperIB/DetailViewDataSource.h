@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "GameController.h"
 
-@interface DetailViewDataSource : NSObject // <UITableViewDataSource>
+@interface DetailViewDataSource : NSObject  <UITableViewDataSource, UITableViewDelegate>
 
-//@property (nonatomic, assign) NSInteger rowCount;
+@property (nonatomic, assign) NSInteger rowCount;
+
+@property (nonatomic, strong) Game *game;
 
 
 @end
